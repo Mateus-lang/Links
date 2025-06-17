@@ -9,7 +9,7 @@ type CategoryProps = PressableProps & {
   icon: keyof typeof MaterialIcons.glyphMap;
 };
 
-export function Category({icon,isSelected,name, ...rest}: CategoryProps) {
+export function Category({ icon, isSelected, name, ...rest }: CategoryProps) {
   const color = isSelected ? colors.green[300] : colors.gray[400];
   return (
     <Pressable style={styles.container} {...rest}>
